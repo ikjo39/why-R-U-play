@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+// https://mvnrepository.com/artifact/com.sparkjava/spark-core
+    implementation 'com.sparkjava:spark-core:2.9.4'
+    // https://mvnrepository.com/artifact/com.sparkjava/spark-template-velocity
+    implementation 'com.sparkjava:spark-template-velocity:2.7.1'
+
+// https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+
+    // SLF4J API
+    implementation 'org.slf4j:slf4j-api:1.7.25'
+
+    // Logback Classic Module
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+}
+
+test {
+    useJUnitPlatform()
+}
